@@ -20,29 +20,39 @@ export default {
     },
     extend: {
       colors: {
-        background: {
-          DEFAULT: "30 20% 95%", // Light beige
-          foreground: "30 10% 20%", // Dark brown
-        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "30 20% 40%", // Medium brown
-          foreground: "30 5% 98%", // Off-white
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "30 15% 80%", // Light brown
-          foreground: "30 10% 20%", // Dark brown
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         muted: {
-          DEFAULT: "30 15% 80%", // Light brown
-          foreground: "30 10% 40%", // Medium brown
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "30 15% 80%", // Light brown
-          foreground: "30 10% 20%", // Dark brown
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
-        border: "30 10% 70%", // Brown
-        input: "30 10% 70%", // Brown
-        ring: "30 10% 20%", // Dark brown
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -59,4 +69,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
