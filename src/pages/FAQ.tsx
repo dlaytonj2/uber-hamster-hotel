@@ -100,10 +100,10 @@ const FAQ = () => {
 
   return (
     <PageTransition>
-      <div className="pt-32 pb-20">
+      <div className="pt-32 pb-20 bg-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4 text-primary">
               Frequently Asked Questions
             </h1>
             <p className="text-lg text-muted-foreground max-w-[700px]">
@@ -114,11 +114,21 @@ const FAQ = () => {
           <div className="max-w-3xl mx-auto">
             {faqs.map((category, categoryIndex) => (
               <div key={categoryIndex} className="mb-10">
-                <h2 className="text-xl font-bold mb-4">{category.category}</h2>
-                <Accordion type="single" collapsible className="w-full">
+                <h2 className="text-xl font-bold mb-4 text-primary">
+                  {category.category}
+                </h2>
+                <Accordion 
+                  type="single" 
+                  collapsible 
+                  className="w-full space-y-4"
+                >
                   {category.questions.map((faq, faqIndex) => (
-                    <AccordionItem key={faqIndex} value={`item-${categoryIndex}-${faqIndex}`}>
-                      <AccordionTrigger className="text-left font-medium">
+                    <AccordionItem 
+                      key={faqIndex} 
+                      value={`item-${categoryIndex}-${faqIndex}`} 
+                      className="earth-card"
+                    >
+                      <AccordionTrigger className="text-left font-medium text-primary hover:text-primary/80">
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground">
@@ -132,15 +142,26 @@ const FAQ = () => {
           </div>
           
           <div className="mt-16 text-center">
-            <h2 className="text-2xl font-bold mb-4">Still Have Questions?</h2>
+            <h2 className="text-2xl font-bold mb-4 text-primary">
+              Still Have Questions?
+            </h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               We're here to help! Contact our friendly team for personalized assistance.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild variant="outline" size="lg" className="rounded-full px-8">
+              <Button 
+                asChild 
+                variant="outline" 
+                size="lg" 
+                className="rounded-full px-8 earth-gradient hover:opacity-90 transition-opacity"
+              >
                 <Link to="mailto:info@uberhamsters.com">Email Us</Link>
               </Button>
-              <Button asChild size="lg" className="rounded-full px-8">
+              <Button 
+                asChild 
+                size="lg" 
+                className="rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90"
+              >
                 <Link to="tel:+15551234567">Call (555) 123-4567</Link>
               </Button>
             </div>
@@ -152,3 +173,4 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
