@@ -9,7 +9,7 @@ const Pricing = () => {
   const pricingPlans = [
     {
       name: "Standard",
-      price: 25,
+      price: 30,
       description: "Essential care for your hamster in a comfortable environment.",
       features: [
         "Cozy standard accommodation",
@@ -22,7 +22,7 @@ const Pricing = () => {
     },
     {
       name: "Premium",
-      price: 40,
+      price: 45,
       description: "Enhanced comfort and additional activities for an enriched stay.",
       features: [
         "Spacious deluxe accommodation",
@@ -37,7 +37,7 @@ const Pricing = () => {
     },
     {
       name: "Luxury",
-      price: 60,
+      price: 75,
       description: "The ultimate luxury experience with personalized attention.",
       features: [
         "Extra-large luxury suite",
