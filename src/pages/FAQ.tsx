@@ -38,7 +38,7 @@ const FAQ = () => {
       questions: [
         {
           question: "How do I make a reservation?",
-          answer: "Reservations can be made through our website using the online booking form, by phone at (555) 123-4567, or via email at bookings@uberhamsters.com. We recommend booking at least one week in advance, especially during peak seasons."
+          answer: "Reservations can be made through our website using the online booking form, by phone at (416) 123-4567, or via email at bookings@uberhamsters.com. We recommend booking at least one week in advance, especially during peak seasons."
         },
         {
           question: "What is your cancellation policy?",
@@ -162,7 +162,7 @@ const FAQ = () => {
                 size="lg" 
                 className="rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                <Link to="tel:+15551234567">Call (555) 123-4567</Link>
+                <Link to="tel:+14161234567">Call (416) 123-4567</Link>
               </Button>
             </div>
           </div>

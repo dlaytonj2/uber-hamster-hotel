@@ -277,7 +277,7 @@ const Reservation = () => {
                         id="contact-phone"
                         value={contactInfo.phone}
                         onChange={(e) => setContactInfo({...contactInfo, phone: e.target.value})}
-                        placeholder="(555) 123-4567"
+                        placeholder="(416) 123-4567"
                       />
                     </div>
                   </div>
